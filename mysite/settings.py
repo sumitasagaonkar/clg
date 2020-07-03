@@ -25,7 +25,7 @@ SECRET_KEY = 'h3tsr%q1#%2z&*ga2ry39x@)_7xavg!m#@e^skfk)6$qs(s)=u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ 'gajadattelectrical.in']
 
 
 # Application definition
