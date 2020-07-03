@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <title>prediction for the house model</title>
+  </head>
+  <body>
+    <h1><div style="text-align:center"><font color="blue">profile prediction for the house</font>  </div></h1>
+    <hr>
+    </br>
+      <h2><div style="text-align:center"><font color="blue">enter values to predict </font>  </div></h2><hr></br>
+      <div class="container">
+        <div class='row'>
+          <div class= 'col-6'>
+
+            <form  action="{% url 'home' %}" method="post">{% csrf_token %}
+              <div class="form-group">
+                <label for="CRIM"><p class="font-weight-bold">CRIM</p></label>
+                <input type="text" name="CRIME" value="">
+                </div>
+
+                <div class="form-group">
+                  <label for="ZN"><p class="font-weight-bold">ZN</p></label>
+                  <input type="text" name="ZN" value="">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="INDUS"><p class="font-weight-bold">INDUS</p></label>
+                    <input type="text" name="INDUS" value="">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="CHAS"><p class="font-weight-bold">CHAS</p></label>
+                      <input type="text" name="CHAS" value="">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="NOX"><p class="font-weight-bold">NOX</p></label>
+                        <input type="text" name="NOX" value="">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="RM"><p class="font-weight-bold">RM</p></label>
+                          <input type="text" name="RM" value="">
+                          </div>
+
+                          <div class="form-group">
+                            <label for="AGE"><p class="font-weight-bold">AGE</p></label>
+                            <input type="text" name="AGE" value="">
+                            </div>
+
+                            <div class="form-group">
+                              <label for="DIS"><p class="font-weight-bold">DIS</p></label>
+                              <input type="text" name="DIS" value="">
+                              </div>
+
+                              <div class="form-group">
+                                <label for="RAD"><p class="font-weight-bold">RAD</p></label>
+                                <input type="text" name="RAD" value="">
+                                </div>
+
+                                <div class="form-group">
+                                  <label for="RAX"><p class="font-weight-bold">RAX</p></label>
+                                  <input type="text" name="RAX" value="">
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="PTRATIO"><p class="font-weight-bold">PTRATIO</p></label>
+                                    <input type="text" name="PTRATIO" value="">
+                                    </div>
+
+                                    <div class="form-group">
+                                      <label for="B"><p class="font-weight-bold">B</p></label>
+                                      <input type="text" name="B" value="">
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="LSTAT"><p class="font-weight-bold">LSTAT</p></label>
+                                        <input type="text" name="LSTAT" value="">
+                                        </div>
+
+                                        <div class="form-group">
+                                          <label for="TAXRM"><p class="font-weight-bold">TAXRM</p></label>
+                                          <input type="text" name="TAXRM" value="">
+                                          </div>
+                  <input type='submit' class="btn btn-primary" value="submit">
+
+            </form>
+
+            </div>
+            </div>
+            </div>
+  </body>
+</html>
